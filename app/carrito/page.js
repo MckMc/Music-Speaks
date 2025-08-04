@@ -21,10 +21,10 @@ export default function CarritoPage() {
     fetchCarrito();
   }, []);
 
-  // ✅ USAR fetchCarrito DESPUÉS DE ELIMINAR
+
   const eliminarProducto = async (id) => {
     await fetch(`/api/carrito?id=${id}`, { method: 'DELETE' });
-    await fetchCarrito(); // 🔁 Actualiza el carrito desde Firestore
+    await fetchCarrito();
   };
 
   const subtotal = carrito.reduce((acc, i) => acc + i.precio * i.cantidad, 0);
@@ -73,7 +73,7 @@ export default function CarritoPage() {
             ))}
           </ul>
 
-          {/* Resumen */}
+          {}
           <aside className={styles.summary}>
             <div className={styles.row}>
               <span>Subtotal</span>

@@ -1,9 +1,8 @@
-/* app/carrito/carrito.module.scss */
-$bg: #111;          // fondo principal
-$panel: #1a1a1a;    // tarjetas
-$text: #f2f2f2;     // texto
-$muted: #cfcfcf;    // texto suave
-$gold: #d4af37;     // dorado del sitio
+$bg: #111;
+$panel: #1a1a1a;
+$text: #f2f2f2;
+$muted: #cfcfcf;
+$gold: #d4af37;
 $shadow: 0 6px 16px rgba(0, 0, 0, 0.28);
 
 .container {
@@ -29,7 +28,7 @@ $shadow: 0 6px 16px rgba(0, 0, 0, 0.28);
   grid-template-columns: 1fr;
   gap: 1.25rem;
 
-  /* si querés que el “resumen” quede a la derecha en pantallas grandes */
+
   @media (min-width: 960px) {
     grid-template-columns: 2fr 1fr;
     align-items: start;

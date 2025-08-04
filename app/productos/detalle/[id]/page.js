@@ -1,5 +1,5 @@
 import { doc, getDoc } from 'firebase/firestore';
-import { db } from '@firebase/config';
+import { db } from '../../../../firebase/config';
 import styles from './detalle.module.scss';
 
 export default async function ProductoDetalle({ params }) {

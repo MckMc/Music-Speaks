@@ -1,5 +1,5 @@
-// POST /api/usuarios
-import { auth } from '@/firebase/firebaseConfig';
+
+import { auth } from '../../../../firebase/firebaseConfig';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 export async function POST(req) {

@@ -5,7 +5,7 @@
   background-color: #d4af37;
   padding: 0 2rem;
   padding-left: 0.5rem;
-  height: 80px; // altura fija para el header
+  height: 80px;
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
@@ -19,8 +19,8 @@
   text-decoration: none;
   letter-spacing: 1px;
     .logoImage {
-        height: 100%;       // que se adapte al header
-        max-height: 120px;   // o el valor que prefieras
+        height: 100%;
+        max-height: 120px;
         width: auto;
         object-fit: contain;
         margin: 0;

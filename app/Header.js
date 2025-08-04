@@ -6,7 +6,7 @@ import styles from './header.module.scss';
 export default function Header() {
   return (
     <header className={styles.header}>
-       <div className={styles.logo}>
+      <div className={styles.logo}>
         <Link href="/" className={styles.logo}>
               <img
                 src="/Logo_MusicSpeaks_Transparente.png"
