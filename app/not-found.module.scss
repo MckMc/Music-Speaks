@@ -1,0 +1,43 @@
+.notFound {
+  background-color: #121212;
+  color: #d4af37;
+  min-height: 80vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.button {
+  background-color: #d4af37;
+  color: #121212;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #b9972e;
+    color: white;
+  }
+}

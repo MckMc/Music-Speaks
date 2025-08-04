@@ -1,0 +1,68 @@
+.home {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 3rem;
+    color: #d4af37; // dorado
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #ccc;
+  }
+
+  .cta {
+    background-color: #d4af37;
+    color: #121212;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #b89c2f;
+    }
+  }
+}
+
+.featured {
+  h2 {
+    margin-bottom: 1rem;
+    color: #d4af37;
+  }
+
+  .categories {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .categoryCard {
+    background-color: #1e1e1e;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(212, 175, 55, 0.1);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #f5f5f5;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: #2c2c2c;
+    }
+  }
+}

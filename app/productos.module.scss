@@ -1,0 +1,84 @@
+.main {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sidebar {
+  width: 200px;
+  margin-right: 2rem;
+}
+
+.productosGrid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+  width: 100%;
+}
+.card {
+  width: 250px;
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.sidebar {
+  width: 200px;
+  background: #111;
+  padding: 1rem;
+  border-radius: 8px;
+
+  h3 {
+    color: gold;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: gold;
+      }
+    }
+  }
+}
+
+.productosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  align-items: stretch;
+  width: 100%;
+}
+.card button {
+  background: gold;
+  border: none;
+  padding: 0.3rem 0.8rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #ffd700;
+}

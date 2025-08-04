@@ -1,0 +1,128 @@
+/* app/carrito/carrito.module.scss */
+$bg: #111;          // fondo principal
+$panel: #1a1a1a;    // tarjetas
+$text: #f2f2f2;     // texto
+$muted: #cfcfcf;    // texto suave
+$gold: #d4af37;     // dorado del sitio
+$shadow: 0 6px 16px rgba(0, 0, 0, 0.28);
+
+.container {
+  min-height: 100vh;
+  padding: 2rem clamp(1rem, 4vw, 3rem);
+  background: $bg;
+  color: $text;
+}
+
+.title {
+  font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+  margin: 0 0 1.5rem 0;
+  font-weight: 700;
+}
+
+.empty {
+  margin-top: 1rem;
+  color: $muted;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+
+  /* si querés que el “resumen” quede a la derecha en pantallas grandes */
+  @media (min-width: 960px) {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+}
+
+.itemsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: $panel;
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  border-radius: 10px;
+  box-shadow: $shadow;
+
+  .info {
+    display: grid;
+    gap: 0.25rem;
+
+    .name {
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .meta {
+      color: $muted;
+      font-size: 0.95rem;
+    }
+  }
+
+  .price {
+    font-weight: 700;
+    white-space: nowrap;
+  }
+}
+
+.summary {
+  background: $panel;
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: $shadow;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.25rem 0;
+    color: $muted;
+  }
+
+  .total {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.25);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: $gold;
+  }
+
+  .cta {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    background: $gold;
+    color: #121212;
+    transition: transform 120ms ease, filter 120ms ease;
+
+    &:hover { transform: translateY(-1px); filter: brightness(1.02); }
+    &:active { transform: translateY(0); }
+  }
+}
+
+.backLink {
+  margin-top: 1rem;
+  display: inline-block;
+  color: $gold;
+  text-decoration: none;
+
+  &:hover { text-decoration: underline; }
+}

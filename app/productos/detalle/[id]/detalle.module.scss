@@ -1,0 +1,26 @@
+.detalle {
+  padding: 2rem;
+  color: white;
+
+  img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .colores {
+    margin-top: 1rem;
+
+    button {
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      cursor: default;
+    }
+  }
+}

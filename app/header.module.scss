@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d4af37;
+  padding: 0 2rem;
+  padding-left: 0.5rem;
+  height: 80px; // altura fija para el header
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.logo {
+  font-family: 'Georgia', serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #121212;
+  text-decoration: none;
+  letter-spacing: 1px;
+    .logoImage {
+        height: 100%;       // que se adapte al header
+        max-height: 120px;   // o el valor que prefieras
+        width: auto;
+        object-fit: contain;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        display: block;
+}
+
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem {
+  text-decoration: none;
+  color: #121212;
+  font-weight: bold;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  position: relative;
+}
+
+.navItem:hover {
+  color: #000;
+}
+
+.navItem::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navItem:hover::after {
+  transform: scaleX(1);
+}
+
+.cartIcon {
+  font-size: 1.2rem;
+  color: #121212;
+}
