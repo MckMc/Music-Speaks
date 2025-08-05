@@ -1,4 +1,4 @@
-import ProductCard from '@/components/ProductCards';
+import ProductCard from '../../../components/ProductCards';
 import styles from '../../../productos.module.scss';
 import { notFound } from 'next/navigation';
 

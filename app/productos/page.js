@@ -1,5 +1,5 @@
-import ProductCard from '@/components/ProductCards';
-import styles from '@/productos.module.scss';
+import ProductCard from '../components/ProductCards';
+import styles from '../productos.module.scss'
 import Link from 'next/link';
 
 async function getProductos() {
