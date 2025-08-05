@@ -2,6 +2,7 @@ import ProductCard from '../../../components/ProductCards';
 import styles from '../../../productos.module.scss';
 import { notFound } from 'next/navigation';
 
+// forzar un deploy
 export default async function CategoriaPage({ params }) {
   const res = await fetch('http://localhost:3000/api/productos', {
     cache: 'no-store'
