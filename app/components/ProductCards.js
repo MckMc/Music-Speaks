@@ -19,7 +19,7 @@ export default function ProductCard({ producto }) {
   };
 
   return (
-    <div className={styles.card}>
+    <div className={styles.card} >
     <Link href={`/productos/detalle/${producto.id}`}>
     <div>
       <img className='img' src={producto.imagen} alt={producto.nombre} />

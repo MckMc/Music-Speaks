@@ -16,12 +16,6 @@ export default function Home() {
       </section>
 
       <section className={styles.featured}>
-        <h2>Categorías populares</h2>
-        <div className={styles.categories}>
-          <div className={styles.categoryCard}>🎸 Guitarras</div>
-          <div className={styles.categoryCard}>🥁 Baterías</div>
-          <div className={styles.categoryCard}>🎧 Auriculares</div>
-        </div>
       </section>
     </main>
   );
