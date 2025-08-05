@@ -3,7 +3,7 @@ import styles from '../productos.module.scss'
 import Link from 'next/link';
 
 async function getProductos() {
-  const res = await fetch('http://localhost:3000/api/productos', {
+const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/productos`, {
     cache: 'no-store',
   });
   return res.json();

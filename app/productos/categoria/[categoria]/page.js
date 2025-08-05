@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 
 // forzar un deploy
 export default async function CategoriaPage({ params }) {
-  const res = await fetch('http://localhost:3000/api/productos', {
+const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/productos`, {
     cache: 'no-store'
   });
 
